@@ -2,7 +2,7 @@ from datetime import datetime
 import string
 import secrets
 
-def generate_password(length: int = 12) -> str:
+def generate_password(length: int = 14) -> str:
     alphabet = string.ascii_letters + string.digits + string.punctuation
     password = ''.join(secrets.choice(alphabet) for _ in range(length))
 
